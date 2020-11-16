@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### Deployment Codes:
+Add all the SVGs into the angular.json's assets directory
+`ng build --prod --output-path docs --base-href /kkrl/`
+`ga .`
+`gc -m "Your message"`
+`gp`
