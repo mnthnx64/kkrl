@@ -24,7 +24,12 @@ export class AppComponent {
     "24x7 Support":"customer-service"
   }
   detailDesc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt";
-  nav: {} = {
+  nav: {
+    home: boolean,
+    ourProcesses: boolean,
+    bestFit: boolean,
+    contact: boolean
+  } = {
     home: true,
     ourProcesses: false,
     bestFit: false,
