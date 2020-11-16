@@ -38,17 +38,23 @@
             <img class="play-image" src="assets/play.svg">
           </td>
           <td>
-            <tr>
-              <td>
-                <div class="footer-text">Introduction to KKRL</div>
-              </td>
-            </tr>
-            <tr class="detail-row">
-              <td><div class="footer-detail">+91 98450 98450</div></td>
-              <td><div class="footer-detail">krishna@kkrl.com</div></td>
-              <td><div class="footer-detail"><img src="assets/noun_User Download_1062521.png">Download Profile</div></td>
-            </tr>
+        <tr>
+          <td>
+            <div class="footer-text">Introduction to KKRL</div>
           </td>
+        </tr>
+        <tr class="detail-row">
+          <td>
+            <div class="footer-detail">+91 98450 98450</div>
+          </td>
+          <td>
+            <div class="footer-detail">krishna@kkrl.com</div>
+          </td>
+          <td>
+            <div class="footer-detail"><img src="assets/noun_User Download_1062521.png">Download Profile</div>
+          </td>
+        </tr>
+        </td>
         </tr>
       </table>
     </div>
@@ -60,7 +66,13 @@
       <span>Our Mission is to Solve your Business problem and<br> provide Valuable Business Tips</span>
     </div>
     <div class="desc">
-      KKRL was born in 2014 from the creative and tenacious mind of our CEO- Mr Krishna. Founded 6 years ago we aim at bringing technology solutions for the most complex business problems. Our team expertise in design, build and support of software solutions used in a wide variety of industries ranging from financial services to public sector.<br><br> We specialize in building software through a rigorous process involving design and analysis, foundational robustness and customisable interfaces. This way we help our clients get the maximum value out of their investments and ensure that these solutions are future proof with respect to technology advancements and changing business landscapes.
+      KKRL was born in 2014 from the creative and tenacious mind of our CEO- Mr Krishna. Founded 6 years ago we aim at
+      bringing technology solutions for the most complex business problems. Our team expertise in design, build and
+      support of software solutions used in a wide variety of industries ranging from financial services to public
+      sector.<br><br> We specialize in building software through a rigorous process involving design and analysis,
+      foundational robustness and customisable interfaces. This way we help our clients get the maximum value out of
+      their investments and ensure that these solutions are future proof with respect to technology advancements and
+      changing business landscapes.
     </div>
 
     <!-- Title 2 -->
@@ -69,7 +81,7 @@
     </div>
     <!-- Preferences -->
     <div class="services row">
-      
+
       <div *ngFor="let detail of details" class="col-4 detail-tab justify-content-center">
         <table>
           <tr>
@@ -77,17 +89,17 @@
               <img class="detail-img" src="assets/{{imageMap[detail]}}.png">
             </td>
             <td>
-              <tr>
-                <span class="detail-heading">{{detail}}</span>
-              </tr>
-              <tr>
-                <div class="detail-desc"><span>{{detailDesc}}</span></div>
-              </tr>
-            </td>
+          <tr>
+            <span class="detail-heading">{{detail}}</span>
+          </tr>
+          <tr>
+            <div class="detail-desc"><span>{{detailDesc}}</span></div>
+          </tr>
+          </td>
           </tr>
         </table>
       </div>
-      
+
     </div>
   </div>
 </div>
@@ -112,7 +124,8 @@
         <!-- Links -->
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link black-link" href="#about" (click)="change(1)">About</a></li>
-          <li class="nav-item"><a class="nav-link black-link" href="#ourProcesses" (click)="change(2)">Our Process</a></li>
+          <li class="nav-item"><a class="nav-link black-link" href="#ourProcesses" (click)="change(2)">Our Process</a>
+          </li>
           <li class="nav-item"><a class="nav-link black-link" href="#bestFit" (click)="change(3)">Best Fit</a></li>
           <li class="nav-item"><a class="nav-link black-link" href="#contact" (click)="change(4)">Contact Us</a></li>
         </ul>
@@ -133,7 +146,8 @@
             <input class="inputs" type="email" placeholder="Your Email Address" required><br>
             <input class="inputs" type="datetime" placeholder="Date & Time to connect" required><br>
             <div style="width: 75%;" class="cb">
-              <input type="checkbox" id="quote" name="quote"><label class="cb-label" for="quote">Request for Quote</label><br>
+              <input type="checkbox" id="quote" name="quote"><label class="cb-label" for="quote">Request for
+                Quote</label><br>
             </div>
             <div class="submit">SUBMIT</div>
           </div>
@@ -196,22 +210,24 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-              <div style="width:63%;border-right: 2px solid #E1E1E1;">
-                <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                  <span class="element-header">1. Plan</span><br>
-                  <span class="element-sub-header">To get started</span><br>
-                  <span class="element-sub-title">Articulate the scope and expectations</span>
-                </div>
-                <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
-                  <span>
-                    What is the project scope?<br> What are the expectations?<br> What is the working model?<br> Who are the people?<br> What is the timeframe?
-                  </span>
-                </div>
+            <div style="width:63%;border-right: 2px solid #E1E1E1;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
+                <span class="element-header">1. Plan</span><br>
+                <span class="element-sub-header">To get started</span><br>
+                <span class="element-sub-title">Articulate the scope and expectations</span>
               </div>
-              <div style="padding: 6vh 0 0 2.5vw ;width: 37%;">
-                <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;" >Output</div>
-                <span style="font: normal normal 300 1vw/2vw Montserrat;">Team allocation<br> Working model<br> Agreed project plan<br> Business intent</span>
+              <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
+                <span>
+                  What is the project scope?<br> What are the expectations?<br> What is the working model?<br> Who are
+                  the people?<br> What is the timeframe?
+                </span>
               </div>
+            </div>
+            <div style="padding: 6vh 0 0 2.5vw ;width: 37%;">
+              <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;">Output</div>
+              <span style="font: normal normal 300 1vw/2vw Montserrat;">Team allocation<br> Working model<br> Agreed
+                project plan<br> Business intent</span>
+            </div>
           </div>
         </div>
       </div>
@@ -223,22 +239,26 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-              <div style="width:63%;border-right: 2px solid #E1E1E1;">
-                <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                  <span class="element-header">2. Discover</span><br>
-                  <span class="element-sub-header">To get clarity</span><br>
-                  <span class="element-sub-title">Ask the below questions to articulate<br> clearly the market, competition,<br> user and opportunity.</span>
-                </div>
-                <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
-                  <span>
-                    What is the business opportunity?<br> Who are the target users?<br> What are user needs?<br> What is the competitive landscape?<br> What is the product story?<br> What is the success criteria?<br> What are the product requirements?<br> What is the technology scope?
-                  </span>
-                </div>
+            <div style="width:63%;border-right: 2px solid #E1E1E1;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
+                <span class="element-header">2. Discover</span><br>
+                <span class="element-sub-header">To get clarity</span><br>
+                <span class="element-sub-title">Ask the below questions to articulate<br> clearly the market,
+                  competition,<br> user and opportunity.</span>
               </div>
-              <div style="padding: 15vh 0 0 2.5vw ;width: 37%;">
-                <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;" >Output</div>
-                <span style="font: normal normal 300 1vw/2vw Montserrat;">Team allocation<br> Working model<br> Agreed project plan<br> Business intent</span>
+              <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
+                <span>
+                  What is the business opportunity?<br> Who are the target users?<br> What are user needs?<br> What is
+                  the competitive landscape?<br> What is the product story?<br> What is the success criteria?<br> What
+                  are the product requirements?<br> What is the technology scope?
+                </span>
               </div>
+            </div>
+            <div style="padding: 15vh 0 0 2.5vw ;width: 37%;">
+              <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;">Output</div>
+              <span style="font: normal normal 300 1vw/2vw Montserrat;">Team allocation<br> Working model<br> Agreed
+                project plan<br> Business intent</span>
+            </div>
           </div>
         </div>
       </div>
@@ -256,22 +276,25 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-              <div style="width:63%;border-right: 2px solid #E1E1E1;">
-                <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                  <span class="element-header">3. Product Story</span><br>
-                  <span class="element-sub-header">To get clarity</span><br>
-                  <span class="element-sub-title">Ask the below questions to articulate<br> the problem, user and the solution<br> that solved the problem.</span>
-                </div>
-                <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
-                  <span>
-                    What is the problem?<br> What is causing the problem?<br> Who is the hero?<br> What does the hero want?<br> What is at stake?<br> How does success look like?
-                  </span>
-                </div>
+            <div style="width:63%;border-right: 2px solid #E1E1E1;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
+                <span class="element-header">3. Product Story</span><br>
+                <span class="element-sub-header">To get clarity</span><br>
+                <span class="element-sub-title">Ask the below questions to articulate<br> the problem, user and the
+                  solution<br> that solved the problem.</span>
               </div>
-              <div style="padding: 12vh 0 0 2.5vw ;width: 37%;">
-                <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;" >Output</div>
-                <span style="font: normal normal 300 1vw/2vw Montserrat;">Problem statement<br> Target customer/user<br> Personas<br> Value proposition</span>
+              <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
+                <span>
+                  What is the problem?<br> What is causing the problem?<br> Who is the hero?<br> What does the hero
+                  want?<br> What is at stake?<br> How does success look like?
+                </span>
               </div>
+            </div>
+            <div style="padding: 12vh 0 0 2.5vw ;width: 37%;">
+              <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;">Output</div>
+              <span style="font: normal normal 300 1vw/2vw Montserrat;">Problem statement<br> Target customer/user<br>
+                Personas<br> Value proposition</span>
+            </div>
           </div>
         </div>
       </div>
@@ -283,22 +306,24 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-              <div style="width:63%;border-right: 2px solid #E1E1E1;">
-                <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                  <span class="element-header">4. Define</span><br>
-                  <span class="element-sub-header">To get started</span><br>
-                  <span class="element-sub-title">Articulate the scope and expectations</span>
-                </div>
-                <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
-                  <span>
-                    What are the experience goals?<br> What are the experience principles?<br> How does the IA look?<br> How does the user want to achieve?<br> What are the inclusivity principles?
-                  </span>
-                </div>
+            <div style="width:63%;border-right: 2px solid #E1E1E1;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
+                <span class="element-header">4. Define</span><br>
+                <span class="element-sub-header">To get started</span><br>
+                <span class="element-sub-title">Articulate the scope and expectations</span>
               </div>
-              <div style="padding: 4vh 0 0 2.5vw ;width: 37%;">
-                <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;" >Output</div>
-                <span style="font: normal normal 300 1vw/2vw Montserrat;">User journey maps<br> Scenarios, Task flows<br> Information architecture<br> Design principles</span>
+              <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
+                <span>
+                  What are the experience goals?<br> What are the experience principles?<br> How does the IA look?<br>
+                  How does the user want to achieve?<br> What are the inclusivity principles?
+                </span>
               </div>
+            </div>
+            <div style="padding: 4vh 0 0 2.5vw ;width: 37%;">
+              <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;">Output</div>
+              <span style="font: normal normal 300 1vw/2vw Montserrat;">User journey maps<br> Scenarios, Task flows<br>
+                Information architecture<br> Design principles</span>
+            </div>
           </div>
         </div>
       </div>
@@ -316,22 +341,24 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-              <div style="width:63%;border-right: 2px solid #E1E1E1;">
-                <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                  <span class="element-header">5. Validate</span><br>
-                  <span class="element-sub-header">To test hypothesis</span><br>
-                  <span class="element-sub-title">Articulate the scope and expectations</span>
-                </div>
-                <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
-                  <span>
-                    What are the experience goals?<br> What are the experience principles?<br> How does the IA look?<br> How does the user want to achieve?<br> What are the inclusivity principles?
-                  </span>
-                </div>
+            <div style="width:63%;border-right: 2px solid #E1E1E1;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
+                <span class="element-header">5. Validate</span><br>
+                <span class="element-sub-header">To test hypothesis</span><br>
+                <span class="element-sub-title">Articulate the scope and expectations</span>
               </div>
-              <div style="padding: 6vh 0 0 2.5vw ;width: 37%;">
-                <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;" >Output</div>
-                <span style="font: normal normal 300 1vw/2vw Montserrat;">Interaction models<br> Hero flows<br> Rapid prototype<br> Validation report</span>
+              <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
+                <span>
+                  What are the experience goals?<br> What are the experience principles?<br> How does the IA look?<br>
+                  How does the user want to achieve?<br> What are the inclusivity principles?
+                </span>
               </div>
+            </div>
+            <div style="padding: 6vh 0 0 2.5vw ;width: 37%;">
+              <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;">Output</div>
+              <span style="font: normal normal 300 1vw/2vw Montserrat;">Interaction models<br> Hero flows<br> Rapid
+                prototype<br> Validation report</span>
+            </div>
           </div>
         </div>
       </div>
@@ -343,22 +370,25 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-              <div style="width:63%;border-right: 2px solid #E1E1E1;">
-                <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                  <span class="element-header">6. Design</span><br>
-                  <span class="element-sub-header">To create a solution</span><br>
-                  <span class="element-sub-title">Design detailed flows for the<br> agreed scope</span>
-                </div>
-                <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
-                  <span>
-                    What are the insights from validation?<br> Should we reframe hypothesis?<br> Which interaction model works best?<br> What are the tasks for each user?<br> Which UI patterns works best?<br> What is the agile plan?
-                  </span>
-                </div>
+            <div style="width:63%;border-right: 2px solid #E1E1E1;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
+                <span class="element-header">6. Design</span><br>
+                <span class="element-sub-header">To create a solution</span><br>
+                <span class="element-sub-title">Design detailed flows for the<br> agreed scope</span>
               </div>
-              <div style="padding: 6vh 0 0 2.5vw ;width: 37%;">
-                <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;" >Output</div>
-                <span style="font: normal normal 300 1vw/2vw Montserrat;">User journey maps<br> Scenarios, Task flows<br> Information architecture<br> Design principles</span>
+              <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
+                <span>
+                  What are the insights from validation?<br> Should we reframe hypothesis?<br> Which interaction model
+                  works best?<br> What are the tasks for each user?<br> Which UI patterns works best?<br> What is the
+                  agile plan?
+                </span>
               </div>
+            </div>
+            <div style="padding: 6vh 0 0 2.5vw ;width: 37%;">
+              <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;">Output</div>
+              <span style="font: normal normal 300 1vw/2vw Montserrat;">User journey maps<br> Scenarios, Task flows<br>
+                Information architecture<br> Design principles</span>
+            </div>
           </div>
         </div>
       </div>
@@ -376,24 +406,25 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-              <div style="width:63%;border-right: 2px solid #E1E1E1;">
-                <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                  <span class="element-header">7. Develop</span><br>
-                  <span class="element-sub-header">To build the product</span><br>
-                  <span class="element-sub-title">Support engineering through<br> implementation and testing<br> post delivery</span>
-                </div>
-                <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
-                  <span>
-                    What is the UI frame work?
-                  </span>
-                </div>
+            <div style="width:63%;border-right: 2px solid #E1E1E1;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
+                <span class="element-header">7. Develop</span><br>
+                <span class="element-sub-header">To build the product</span><br>
+                <span class="element-sub-title">Support engineering through<br> implementation and testing<br> post
+                  delivery</span>
               </div>
-              <div style="padding: 6vh 0 0 2.5vw ;width: 37%;">
-                <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;" >Output</div>
-                <span style="font: normal normal 300 1vw/2vw Montserrat;">
-                  UI specs / guidelines<br> UI review
+              <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
+                <span>
+                  What is the UI frame work?
                 </span>
               </div>
+            </div>
+            <div style="padding: 6vh 0 0 2.5vw ;width: 37%;">
+              <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;">Output</div>
+              <span style="font: normal normal 300 1vw/2vw Montserrat;">
+                UI specs / guidelines<br> UI review
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -405,22 +436,24 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-              <div style="width:63%;border-right: 2px solid #E1E1E1;">
-                <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                  <span class="element-header">8. Assess</span><br>
-                  <span class="element-sub-header">To ship the product</span><br>
-                  <span class="element-sub-title">Support engineering through<br> implementation and testing<br> post delivery</span>
-                </div>
-                <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
-                  <span>
-                    Which methods are appropriate?<br> Who are the users who can test?<br> What are the possible ways to connect -with users?<br> What are the test scenarios?
-                  </span>
-                </div>
+            <div style="width:63%;border-right: 2px solid #E1E1E1;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
+                <span class="element-header">8. Assess</span><br>
+                <span class="element-sub-header">To ship the product</span><br>
+                <span class="element-sub-title">Support engineering through<br> implementation and testing<br> post
+                  delivery</span>
               </div>
-              <div style="padding: 14vh 0 0 2.5vw ;width: 37%;">
-                <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;" >Output</div>
-                <span style="font: normal normal 300 1vw/2vw Montserrat;">Test scenarios<br> Reports</span>
+              <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
+                <span>
+                  Which methods are appropriate?<br> Who are the users who can test?<br> What are the possible ways to
+                  connect -with users?<br> What are the test scenarios?
+                </span>
               </div>
+            </div>
+            <div style="padding: 14vh 0 0 2.5vw ;width: 37%;">
+              <div style="font: normal normal bold 1.4vw/2.5vw Montserrat;">Output</div>
+              <span style="font: normal normal 300 1vw/2vw Montserrat;">Test scenarios<br> Reports</span>
+            </div>
           </div>
         </div>
       </div>
@@ -462,11 +495,15 @@
     left: 10vw;">
       About Congnitron
     </div>
-    <div style="position: absolute;top: 400px; left: 10vw;font: normal normal 200 1.2vw/2.5vw Montserrat;letter-spacing: 0px;color: #FFFFFF;opacity: 0.91;">
-      Based out of India, Cognitron Technologies is a Software Product Company which aims at making life simple by automating<br>
+    <div
+      style="position: absolute;top: 400px; left: 10vw;font: normal normal 200 1.2vw/2.5vw Montserrat;letter-spacing: 0px;color: #FFFFFF;opacity: 0.91;">
+      Based out of India, Cognitron Technologies is a Software Product Company which aims at making life simple by
+      automating<br>
       mundane daily routines using Artificial Intelligence and Machine Learning.<br><br>
-      A Strong Engineering Team consisting of engineering leads of companies such as Microsoft, Zscalar and founding members Infosys<br>
-      working towards building reliable and unique applications. Every product at Cognitron is engineered concentrating on User<br>
+      A Strong Engineering Team consisting of engineering leads of companies such as Microsoft, Zscalar and founding
+      members Infosys<br>
+      working towards building reliable and unique applications. Every product at Cognitron is engineered concentrating
+      on User<br>
       Experience, making the life of user simple.
     </div>
   </div>
@@ -482,9 +519,9 @@
             CTO
           </div>
           <div style="font: normal normal 300 0.8vw/1.6vw Montserrat;letter-spacing: 0px;">
-            Has worked in no of startups and delivered products that are successful in<br> 
-            the market today. Has Master’s Degree in computer science from<br> 
-            OSU,USA. He’s known for lean yet dynamic engineering practices that<br> 
+            Has worked in no of startups and delivered products that are successful in<br>
+            the market today. Has Master’s Degree in computer science from<br>
+            OSU,USA. He’s known for lean yet dynamic engineering practices that<br>
             have produced world class products in B2B and B2C.
           </div>
         </div>
@@ -499,7 +536,10 @@
             CDO
           </div>
           <div style="font: normal normal 300 0.8vw/1.6vw Montserrat;letter-spacing: 0px;">
-            With 15 + Years of experience in the customer experience and design,<br> Anish carries focused and practical expertise to the growth and<br> management of teams that design for web, mobile, enterprise<br> applications and services. He brings in deep understanding of user<br> experience around products, services and solutions to help businesses<br> spearhead creative and strategic thinking of products.
+            With 15 + Years of experience in the customer experience and design,<br> Anish carries focused and practical
+            expertise to the growth and<br> management of teams that design for web, mobile, enterprise<br> applications
+            and services. He brings in deep understanding of user<br> experience around products, services and solutions
+            to help businesses<br> spearhead creative and strategic thinking of products.
           </div>
         </div>
       </div>
@@ -508,35 +548,36 @@
       <div class="col-md-6">
         <img width="75%" src="assets/build.svg">
       </div>
-      <div class="col-md-6" style="padding: 6vh 0 0 0; font: normal normal normal 1.1vw/2.2vw Montserrat;letter-spacing: 0px;">
+      <div class="col-md-6"
+        style="padding: 6vh 0 0 0; font: normal normal normal 1.1vw/2.2vw Montserrat;letter-spacing: 0px;">
         We hire best of the best engineers the country has to offer.<br><br>
 
-        Our hiring philosophy We hire “Software Engineers” who have the capacity<br> 
+        Our hiring philosophy We hire “Software Engineers” who have the capacity<br>
         to analyze and think about the ways solve any problem under pressure<br>
         and are language agnostic.<br><br>
-        
+
         We have people who were founding Engineers of Infosys working closely<br>
-        with us and have vast experience about 40 years in delivering banking<br> 
-        products.<br><br> 
-        
-        Our team currently consists of people who are experts in Application<br> 
-        Architecture, UI/UX design, Backend Services and database design,<br> 
+        with us and have vast experience about 40 years in delivering banking<br>
+        products.<br><br>
+
+        Our team currently consists of people who are experts in Application<br>
+        Architecture, UI/UX design, Backend Services and database design,<br>
         Machine Learning and AI, Scrum Certified Project Managers.
       </div>
     </div>
   </div>
   <div style="position: absolute; top:205vh; width: 100%;z-index: 0;" class="clients">
     <div style=" background: #F5F5F5; z-index: 0; padding: 10vh 0;">
-      <div class="titleXL-mini" >
+      <div class="titleXL-mini">
         <span>Clients</span>
       </div>
       <div class="d-flex" style="margin: 10vh 0;">
         <div class="blue-bullets col-md-7" style="padding-top: 4vh">
           <ul>
             <li>BMSCE College Of Engineering: AI Based ERP To Automate Backend Processes</li>
-            <li>GSSS Educational Trust: AI Based ERP To Automate Backend Processes</li>  
+            <li>GSSS Educational Trust: AI Based ERP To Automate Backend Processes</li>
             <li>Pramathi Educational Trust: AI Based ERP To Automate Backend Processes</li>
-            <li>Silicon City Educational Trust: AI Based ERP To Automate Backend Processes</li> 
+            <li>Silicon City Educational Trust: AI Based ERP To Automate Backend Processes</li>
             <li>Thinker Zero: An AI tool to Predict Financial Markets.</li>
             <li>OMRX: A Secure Platform to Store Patients Data</li>
             <li>AKKAR: An Event Management System.</li>
@@ -556,13 +597,16 @@
           <ul>
             <li>Experts in <b>AI / ML Bots</b></li>
             <li>Well versed in <b>JAVA , RAILS , PYTHON , ANGULAR AND REACTJS, ANDROID , SWIFT and FLUTTER.</b> </li>
-            <li>Well defined design maturity models for both <b>product and service centric projects that save time and cost</b> </li>
-            <li>We are well versed with CI/ CD principles and use of GIT , Jenkins and Kubernetes to achieve the same. </li>
-            <li>We have good knowledge about cloud deployment infrastructures AWS , Google Cloud Services and Heroku. We are also<br> capable of handling inhouse server architecture design and deployments in linux or windows environments.</li>
+            <li>Well defined design maturity models for both <b>product and service centric projects that save time and
+                cost</b> </li>
+            <li>We are well versed with CI/ CD principles and use of GIT , Jenkins and Kubernetes to achieve the same.
+            </li>
+            <li>We have good knowledge about cloud deployment infrastructures AWS , Google Cloud Services and Heroku. We
+              are also<br> capable of handling inhouse server architecture design and deployments in linux or windows
+              environments.</li>
           </ul>
         </div>
+      </div>
     </div>
   </div>
-  
- 
 </div>
