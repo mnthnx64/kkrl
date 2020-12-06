@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" id="basicExampleNav">
           <!-- Links -->
           <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#about" (click)="change(1)">About</a></li>
+            <li class="nav-item"><a class="nav-link bold-nav" href="#about" (click)="change(1)">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#ourProcesses" (click)="change(2)">Our Process</a></li>
             <li class="nav-item"><a class="nav-link" href="#bestFit" (click)="change(3)">Best Fit</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact" (click)="change(4)">Contact Us</a></li>
@@ -26,13 +26,13 @@
 
       </nav>
 
-      <div class="sub-title">
+      <div class="sub-title" style="top:60vh; position: absolute;">
 
         Innovation distinguishes <br>between a leader and a follower.
 
       </div>
 
-      <table class="footer-landing">
+      <table class="footer-landing" style="top:80vh; position: absolute;">
         <tr>
           <td>
             <img class="play-image" src="assets/play.svg">
@@ -48,7 +48,7 @@
             <div class="footer-detail">+91 98450 98450</div>
           </td>
           <td>
-            <div class="footer-detail">krishna@kkrl.com</div>
+            <div class="footer-detail" style="cursor: pointer;">krishna@kkrl.com</div>
           </td>
           <td>
             <div class="footer-detail"><img src="assets/noun_User Download_1062521.png">Download Profile</div>
@@ -60,7 +60,7 @@
     </div>
   </div>
 
-  <div class="second-page">
+  <div class="second-page" style="padding-top: 5vh;">
     <!-- Title 1 -->
     <div class="titleXL">
       <span>Our Mission is to Solve your Business problem and<br> provide Valuable Business Tips</span>
@@ -80,7 +80,7 @@
       <span>Choose your Preference</span>
     </div>
     <!-- Preferences -->
-    <div class="services row">
+    <div class="services row col-md-12">
 
       <div *ngFor="let detail of details" class="col-4 detail-tab justify-content-center">
         <table>
@@ -127,7 +127,7 @@
           <li class="nav-item"><a class="nav-link black-link" href="#ourProcesses" (click)="change(2)">Our Process</a>
           </li>
           <li class="nav-item"><a class="nav-link black-link" href="#bestFit" (click)="change(3)">Best Fit</a></li>
-          <li class="nav-item"><a class="nav-link black-link" href="#contact" (click)="change(4)">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link black-link bold-nav" href="#contact" (click)="change(4)">Contact Us</a></li>
         </ul>
       </div>
 
@@ -175,7 +175,7 @@
         <!-- Links -->
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#about" (click)="change(1)">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#ourProcesses" (click)="change(2)">Our Process</a></li>
+          <li class="nav-item"><a class="nav-link bold-nav" href="#ourProcesses" (click)="change(2)">Our Process</a></li>
           <li class="nav-item"><a class="nav-link" href="#bestFit" (click)="change(3)">Best Fit</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact" (click)="change(4)">Contact Us</a></li>
         </ul>
@@ -210,11 +210,11 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-            <div style="width:63%;border-right: 2px solid #E1E1E1;">
-              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                <span class="element-header">1. Plan</span><br>
-                <span class="element-sub-header">To get started</span><br>
-                <span class="element-sub-title">Articulate the scope and expectations</span>
+            <div style="width:63%;border-right: 2px solid #E1E1E166;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E166;">
+                <div class="element-header">1. Plan</div>
+                <div class="element-sub-header">To get started</div>
+                <div class="element-sub-title">Articulate the scope and expectations</div>
               </div>
               <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
                 <span>
@@ -239,12 +239,12 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-            <div style="width:63%;border-right: 2px solid #E1E1E1;">
-              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                <span class="element-header">2. Discover</span><br>
-                <span class="element-sub-header">To get clarity</span><br>
-                <span class="element-sub-title">Ask the below questions to articulate<br> clearly the market,
-                  competition,<br> user and opportunity.</span>
+            <div style="width:63%;border-right: 2px solid #E1E1E166;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E166;">
+                <div class="element-header">2. Discover</div>
+                <div class="element-sub-header">To get clarity</div>
+                <div class="element-sub-title">Ask the below questions to articulate<br> clearly the market,
+                  competition,<br> user and opportunity.</div>
               </div>
               <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
                 <span>
@@ -276,12 +276,12 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-            <div style="width:63%;border-right: 2px solid #E1E1E1;">
-              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                <span class="element-header">3. Product Story</span><br>
-                <span class="element-sub-header">To get clarity</span><br>
-                <span class="element-sub-title">Ask the below questions to articulate<br> the problem, user and the
-                  solution<br> that solved the problem.</span>
+            <div style="width:63%;border-right: 2px solid #E1E1E166;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E166;">
+                <div class="element-header">3. Product Story</div>
+                <div class="element-sub-header">To get clarity</div>
+                <div class="element-sub-title">Ask the below questions to articulate<br> the problem, user and the
+                  solution<br> that solved the problem.</div>
               </div>
               <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
                 <span>
@@ -306,11 +306,11 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-            <div style="width:63%;border-right: 2px solid #E1E1E1;">
-              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                <span class="element-header">4. Define</span><br>
-                <span class="element-sub-header">To get started</span><br>
-                <span class="element-sub-title">Articulate the scope and expectations</span>
+            <div style="width:63%;border-right: 2px solid #E1E1E166;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E166;">
+                <div class="element-header">4. Define</div>
+                <div class="element-sub-header">To get started</div>
+                <div class="element-sub-title">Articulate the scope and expectations</div>
               </div>
               <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
                 <span>
@@ -341,11 +341,11 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-            <div style="width:63%;border-right: 2px solid #E1E1E1;">
-              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                <span class="element-header">5. Validate</span><br>
-                <span class="element-sub-header">To test hypothesis</span><br>
-                <span class="element-sub-title">Articulate the scope and expectations</span>
+            <div style="width:63%;border-right: 2px solid #E1E1E166;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E166;">
+                <div class="element-header">5. Validate</div>
+                <div class="element-sub-header">To test hypothesis</div>
+                <div class="element-sub-title">Articulate the scope and expectations</div>
               </div>
               <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
                 <span>
@@ -370,11 +370,11 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-            <div style="width:63%;border-right: 2px solid #E1E1E1;">
-              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                <span class="element-header">6. Design</span><br>
-                <span class="element-sub-header">To create a solution</span><br>
-                <span class="element-sub-title">Design detailed flows for the<br> agreed scope</span>
+            <div style="width:63%;border-right: 2px solid #E1E1E166;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E166;">
+                <div class="element-header">6. Design</div>
+                <div class="element-sub-header">To create a solution</div>
+                <div class="element-sub-title">Design detailed flows for the<br> agreed scope</div>
               </div>
               <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
                 <span>
@@ -406,12 +406,12 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-            <div style="width:63%;border-right: 2px solid #E1E1E1;">
-              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                <span class="element-header">7. Develop</span><br>
-                <span class="element-sub-header">To build the product</span><br>
-                <span class="element-sub-title">Support engineering through<br> implementation and testing<br> post
-                  delivery</span>
+            <div style="width:63%;border-right: 2px solid #E1E1E166;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E166;">
+                <div class="element-header">7. Develop</div>
+                <div class="element-sub-header">To build the product</div>
+                <div class="element-sub-title">Support engineering through<br> implementation and testing<br> post
+                  delivery</div>
               </div>
               <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
                 <span>
@@ -436,12 +436,12 @@
       <div class="col-md-7">
         <div class="element-card justify-content-center">
           <div class="d-flex col-12">
-            <div style="width:63%;border-right: 2px solid #E1E1E1;">
-              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E1;">
-                <span class="element-header">8. Assess</span><br>
-                <span class="element-sub-header">To ship the product</span><br>
-                <span class="element-sub-title">Support engineering through<br> implementation and testing<br> post
-                  delivery</span>
+            <div style="width:63%;border-right: 2px solid #E1E1E166;">
+              <div style="padding-bottom: 4vh;border-bottom: 2px solid #E1E1E166;">
+                <div class="element-header">8. Assess</div>
+                <div class="element-sub-header">To ship the product</div>
+                <div class="element-sub-title">Support engineering through<br> implementation and testing<br> post
+                  delivery</div>
               </div>
               <div style="margin-top: 2vh; font: normal normal 300 1vw/2vw Montserrat;">
                 <span>
@@ -484,7 +484,7 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#about" (click)="change(1)">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#ourProcesses" (click)="change(2)">Our Process</a></li>
-          <li class="nav-item"><a class="nav-link" href="#bestFit" (click)="change(3)">Best Fit</a></li>
+          <li class="nav-item"><a class="nav-link  bold-nav" href="#bestFit" (click)="change(3)">Best Fit</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact" (click)="change(4)">Contact Us</a></li>
         </ul>
       </div>
@@ -527,7 +527,7 @@
         </div>
       </div>
       <div class="col-md-6  d-flex" style="padding: 0;">
-        <img width="28%" src="assets/Anish.png">
+        <img width="30%" src="assets/Anish.png">
         <div style="background: #F5F5F5; width: 70%; padding:2vh 0 0 2vw;">
           <div style="font: normal normal bold 1vw/1.5vw Montserrat;letter-spacing: 0px;">
             Anish V
@@ -535,7 +535,7 @@
           <div style="font: normal normal 600 0.9vw/2vw Montserrat;letter-spacing: 0px;">
             CDO
           </div>
-          <div style="font: normal normal 300 0.8vw/1.6vw Montserrat;letter-spacing: 0px;">
+          <div style="font: normal normal 300 0.8vw/1.4vw Montserrat;letter-spacing: 0px;">
             With 15 + Years of experience in the customer experience and design,<br> Anish carries focused and practical
             expertise to the growth and<br> management of teams that design for web, mobile, enterprise<br> applications
             and services. He brings in deep understanding of user<br> experience around products, services and solutions
@@ -545,8 +545,8 @@
       </div>
     </div>
     <div class="d-flex" style="margin-top: 4rem;">
-      <div class="col-md-6">
-        <img width="75%" src="assets/build.svg">
+      <div class="col-md-6" style="padding-left: 9vw;">
+        <img width="90%" src="assets/build.svg">
       </div>
       <div class="col-md-6"
         style="padding: 6vh 0 0 0; font: normal normal normal 1.1vw/2.2vw Montserrat;letter-spacing: 0px;">
@@ -567,12 +567,12 @@
     </div>
   </div>
   <div style="position: absolute; top:205vh; width: 100%;z-index: 0;" class="clients">
-    <div style=" background: #F5F5F5; z-index: 0; padding: 10vh 0;">
+    <div style=" background: #F5F5F5; z-index: 0; padding: 10vh 0 4vh 0;">
       <div class="titleXL-mini">
         <span>Clients</span>
       </div>
       <div class="d-flex" style="margin: 10vh 0;">
-        <div class="blue-bullets col-md-7" style="padding-top: 4vh">
+        <div class="blue-bullets col-md-7" style="padding-top: 10vh; padding-left: 9vw;">
           <ul>
             <li>BMSCE College Of Engineering: AI Based ERP To Automate Backend Processes</li>
             <li>GSSS Educational Trust: AI Based ERP To Automate Backend Processes</li>
@@ -584,7 +584,7 @@
           </ul>
         </div>
         <div class="col-md-5" style="padding: 0;">
-          <img src="assets/clients.svg" style="max-width: 83%;">
+          <img src="assets/clients.svg" style="max-width: 128%;">
         </div>
       </div>
     </div>

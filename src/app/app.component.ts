@@ -49,6 +49,10 @@ export class AppComponent {
     {}
   ]
 
+  // constructor(private scrollDispatcher: ScrollDispatcher) {    
+  //   this.scrollDispatcher.scrolled().subscribe(x => console.log('I am scrolling'));
+  // }
+
   change(idx: number){
     console.log(idx);
     switch(idx){
@@ -98,5 +102,9 @@ export class AppComponent {
         break;
       }
     }
+  }
+
+  submit(){
+    
   }
 }
