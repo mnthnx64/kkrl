@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="804.136" height="411.338" viewBox="0 0 804.136 411.338">
+	<defs>
+		<style>
+			.a,.b,.e{fill:#fff;}.a{font-size:17px;}.a,.b{font-family:OpenSans-Bold, Open Sans;font-weight:700;}.b{font-size:18px;}.c,.d,.g{fill:none;}.c{stroke:#e4f1fe;}.c,.d{stroke-width:10px;}.d{stroke:#fff;}.f{stroke:none;}.h{filter:url(#c);}.i{filter:url(#a);}
+		</style>
+		<filter id="a" x="0" y="0" width="411.338" height="411.338" filterUnits="userSpaceOnUse">
+			<feOffset dy="3" input="SourceAlpha" />
+			<feGaussianBlur stdDeviation="3" result="b" />
+			<feFlood flood-opacity="0.161" />
+			<feComposite operator="in" in2="b" />
+			<feComposite in="SourceGraphic" />
+		</filter>
+		<filter id="c" x="392.798" y="0" width="411.338" height="411.338" filterUnits="userSpaceOnUse">
+			<feOffset dy="3" input="SourceAlpha" />
+			<feGaussianBlur stdDeviation="3" result="d" />
+			<feFlood flood-opacity="0.161" />
+			<feComposite operator="in" in2="d" />
+			<feComposite in="SourceGraphic" />
+		</filter>
+	</defs>
+	<g transform="translate(-558 -350.987)">
+		<text class="a" transform="translate(634 542)">
+			<tspan x="0" y="0">
+				Understand
+			</tspan>
+			<tspan x="0" y="33">
+				the Problem
+			</tspan>
+		</text>
+		<text class="b" transform="translate(1048 541)">
+			<tspan x="0" y="0">
+				Create
+			</tspan>
+			<tspan x="0" y="35">
+				Solution
+			</tspan>
+		</text>
+		<text class="a" transform="translate(788 542)">
+			<tspan x="0" y="0">
+				Describe
+			</tspan>
+			<tspan x="0" y="33">
+				the Problem
+			</tspan>
+		</text>
+		<text class="b" transform="translate(1190 539)">
+			<tspan x="0" y="0">
+				Test
+			</tspan>
+			<tspan x="0" y="35">
+				Solution
+			</tspan>
+		</text>
+		<g class="i" transform="matrix(1, 0, 0, 1, 558, 350.99)">
+			<g class="c" transform="translate(9 202.67) rotate(-45)">
+				<rect class="f" width="278.132" height="278.132" />
+				<rect class="g" x="5" y="5" width="268.132" height="268.132" />
+			</g>
+		</g>
+		<g class="h" transform="matrix(1, 0, 0, 1, 558, 350.99)">
+			<g class="d" transform="translate(401.8 202.67) rotate(-45)">
+				<rect class="f" width="278.132" height="278.132" />
+				<rect class="g" x="5" y="5" width="268.132" height="268.132" />
+			</g>
+		</g>
+		<rect class="e" width="9" height="376" transform="translate(759 368)" />
+		<rect class="e" width="9" height="376" transform="translate(1152 368)" />
+	</g>
+</svg>

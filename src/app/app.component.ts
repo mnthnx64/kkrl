@@ -1,4 +1,7 @@
+import { ScrollDispatcher } from '@angular/cdk/scrolling';
 import { Component } from '@angular/core';
+import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { ErrorStateMatcher } from '@angular/material/core';
 
 @Component({
   selector: 'app-root',
@@ -36,6 +39,13 @@ export class AppComponent {
     contact: false
   }
 
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email,
+  ]);
+
+  matcher = new MyErrorStateMatcher();
+
   processes = [
     {name:"Requirement\n Gathering", desc:"Our requirement Analysis team works with our client to get overall understanding about the scope of the work"},
     {name:"Use Case &\n Project Planning", desc:"Our PM’s take the requirement scope document and create use case documents for different flows. This also becomes document for UAT."},
@@ -49,9 +59,18 @@ export class AppComponent {
     {}
   ]
 
-  // constructor(private scrollDispatcher: ScrollDispatcher) {    
-  //   this.scrollDispatcher.scrolled().subscribe(x => console.log('I am scrolling'));
-  // }
+  constructor(private scrollDispatcher: ScrollDispatcher) {    
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+        document.getElementById("navbar-top").style.top = "0";
+      } 
+      else {
+        document.getElementById("navbar-top").style.top = "-170px";
+      }
+    }
+  }
 
   change(idx: number){
     console.log(idx);
@@ -102,9 +121,22 @@ export class AppComponent {
         break;
       }
     }
+    window.scrollTo(0,0);
   }
 
   submit(){
     
+  }
+
+  backToTop(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+}
+
+
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
   }
 }

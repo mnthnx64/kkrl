@@ -1,11 +1,111 @@
 <div *ngIf="nav.home" #about>
+  <div id="navbar-top" class="navbar-top">
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+      <!-- KKRL Title -->
+      <div class="title" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="268" height="82.458" viewBox="0 0 268 82.458">
+          <defs>
+            <style>
+              .a {
+                fill: #df1f00;
+              }
+
+              .b {
+                fill: #e9544c;
+              }
+
+              .c {
+                fill: #fff;
+                font-size: 4.16vw;
+                font-family: Montserrat-Light, Montserrat;
+                font-weight: 300;
+              }
+            </style>
+          </defs>
+          <g transform="translate(-117 -34.157)">
+            <g transform="translate(17 11)">
+              <path class="a"
+                d="M35.163,82.458h0A41.628,41.628,0,0,1,12.769,71.279q6.407-6.816,12.817-13.629l.014-.015,9.044-9.616a2.718,2.718,0,0,0,.249-.325c.036-.051.071-.1.107-.152l.08.058.083.059v34.8Zm13.32-.024h0v-35.3l.307.326.01.011.372.4,3.638,3.867C58.762,58.055,64.916,64.6,70.971,71.039A41.637,41.637,0,0,1,48.484,82.434ZM5.307,61.612h0a41.732,41.732,0,0,1-.334-40.16l.243.263.243.263L17.045,34.518l.155.167,6.214,6.725c.114.124.227.249.346.38l.167.184c-.032.039-.062.077-.092.114-.059.075-.115.146-.177.211L5.308,61.611ZM78.361,61.3h0q-6.1-6.414-12.19-12.83l-.1-.106-3.075-3.236q-1.012-1.065-2.023-2.133l-.011-.011L60.026,42l.073-.087c.047-.056.083-.1.123-.142L70.363,30.793l8.331-9.017A41.732,41.732,0,0,1,78.361,61.3ZM48.482,37.567V.021a41.643,41.643,0,0,1,22.986,11.89C65.007,19.155,58.437,26.5,52.083,33.6l-3.262,3.647a2.457,2.457,0,0,1-.192.184c-.043.039-.091.082-.146.133Zm-13.341-.333,0,0-.458-.5-.011-.012c-.3-.331-.585-.643-.862-.954l-2.984-3.336-.018-.02c-6.078-6.8-12.362-13.822-18.548-20.727A41.634,41.634,0,0,1,35.141,0V37.234Z"
+                transform="translate(100 23.157)" />
+              <path class="b"
+                d="M20.35,52.241h0A26.919,26.919,0,0,1,8.1,45.376L12.691,40.5l.161-.171,6.979-7.42a2.76,2.76,0,0,0,.247-.322c.036-.052.072-.1.11-.155l.163.116V52.24ZM33.67,52.2h0V32.019l.614.652.008.009.067.072,3.084,3.279.2.209,8.366,8.894A26.916,26.916,0,0,1,33.671,52.2ZM1.479,34.942v0a27.081,27.081,0,0,1-.312-16.685l6.858,7.422L8.6,26.3c.109.118.216.236.329.361l.184.2c-.031.038-.061.075-.09.112-.06.076-.116.148-.179.214L1.48,34.94Zm51.033-.366h0l-.678-.714-3.652-3.844-1.872-1.974-.005-.005-.019-.02-1.071-1.13.084-.1c.041-.048.076-.09.112-.129l7.406-8.017a27.094,27.094,0,0,1-.3,15.932ZM33.669,22.458V.034A26.859,26.859,0,0,1,46.756,7.884Q42.23,12.947,37.7,18.008l-3.695,4.13a2.623,2.623,0,0,1-.2.19c-.042.038-.087.079-.139.127Zm-13.341-.333,0,0-.456-.5c-.307-.338-.595-.654-.876-.969l-3.413-3.816L7.347,7.63A26.863,26.863,0,0,1,20.328,0V22.125Z"
+                transform="translate(114.814 38.267)" />
+            </g>
+            <text class="c" transform="translate(222 97)">
+              <tspan x="0" y="0" style="font-family:Montserrat;font-weight:300;">
+                KKRL
+              </tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
+      <!-- Collapse button -->
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link bold-nav" href="#about" (click)="change(1)">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ourProcesses" (click)="change(2)">Our Process</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bestFit" (click)="change(3)">Best Fit</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" (click)="change(4)">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </nav>
+    <div class="back-to-top" (click)="backToTop()">
+      Back To Top ↑
+    </div>
+  </div>
   <div class="first-page">
     <div class="backdrop"></div>
     <div class="front-layer">
       <nav class="navbar navbar-expand-lg navbar-dark primary-color">
         <!-- KKRL Title -->
 
-        <div class="title" href="#">KKRL</div>
+        <div class="title" href="#">
+          <svg style="height: 11vh; max-width:20vw;" xmlns="http://www.w3.org/2000/svg" width="268" height="82.458"
+            viewBox="0 0 268 82.458">
+            <defs>
+              <style>
+                .a {
+                  fill: #df1f00;
+                }
+
+                .b {
+                  fill: #e9544c;
+                }
+
+                .c {
+                  fill: #fff;
+                  font-size: 4.16vw;
+                  font-family: Montserrat-Light, Montserrat;
+                  font-weight: 300;
+                }
+              </style>
+            </defs>
+            <g transform="translate(-117 -34.157)">
+              <g transform="translate(17 11)">
+                <path class="a"
+                  d="M35.163,82.458h0A41.628,41.628,0,0,1,12.769,71.279q6.407-6.816,12.817-13.629l.014-.015,9.044-9.616a2.718,2.718,0,0,0,.249-.325c.036-.051.071-.1.107-.152l.08.058.083.059v34.8Zm13.32-.024h0v-35.3l.307.326.01.011.372.4,3.638,3.867C58.762,58.055,64.916,64.6,70.971,71.039A41.637,41.637,0,0,1,48.484,82.434ZM5.307,61.612h0a41.732,41.732,0,0,1-.334-40.16l.243.263.243.263L17.045,34.518l.155.167,6.214,6.725c.114.124.227.249.346.38l.167.184c-.032.039-.062.077-.092.114-.059.075-.115.146-.177.211L5.308,61.611ZM78.361,61.3h0q-6.1-6.414-12.19-12.83l-.1-.106-3.075-3.236q-1.012-1.065-2.023-2.133l-.011-.011L60.026,42l.073-.087c.047-.056.083-.1.123-.142L70.363,30.793l8.331-9.017A41.732,41.732,0,0,1,78.361,61.3ZM48.482,37.567V.021a41.643,41.643,0,0,1,22.986,11.89C65.007,19.155,58.437,26.5,52.083,33.6l-3.262,3.647a2.457,2.457,0,0,1-.192.184c-.043.039-.091.082-.146.133Zm-13.341-.333,0,0-.458-.5-.011-.012c-.3-.331-.585-.643-.862-.954l-2.984-3.336-.018-.02c-6.078-6.8-12.362-13.822-18.548-20.727A41.634,41.634,0,0,1,35.141,0V37.234Z"
+                  transform="translate(100 23.157)" />
+                <path class="b"
+                  d="M20.35,52.241h0A26.919,26.919,0,0,1,8.1,45.376L12.691,40.5l.161-.171,6.979-7.42a2.76,2.76,0,0,0,.247-.322c.036-.052.072-.1.11-.155l.163.116V52.24ZM33.67,52.2h0V32.019l.614.652.008.009.067.072,3.084,3.279.2.209,8.366,8.894A26.916,26.916,0,0,1,33.671,52.2ZM1.479,34.942v0a27.081,27.081,0,0,1-.312-16.685l6.858,7.422L8.6,26.3c.109.118.216.236.329.361l.184.2c-.031.038-.061.075-.09.112-.06.076-.116.148-.179.214L1.48,34.94Zm51.033-.366h0l-.678-.714-3.652-3.844-1.872-1.974-.005-.005-.019-.02-1.071-1.13.084-.1c.041-.048.076-.09.112-.129l7.406-8.017a27.094,27.094,0,0,1-.3,15.932ZM33.669,22.458V.034A26.859,26.859,0,0,1,46.756,7.884Q42.23,12.947,37.7,18.008l-3.695,4.13a2.623,2.623,0,0,1-.2.19c-.042.038-.087.079-.139.127Zm-13.341-.333,0,0-.456-.5c-.307-.338-.595-.654-.876-.969l-3.413-3.816L7.347,7.63A26.863,26.863,0,0,1,20.328,0V22.125Z"
+                  transform="translate(114.814 38.267)" />
+              </g>
+              <text class="c" transform="translate(222 97)">
+                <tspan x="0" y="0" style="font-family:Montserrat;font-weight:300;">
+                  KKRL
+                </tspan>
+              </text>
+            </g>
+          </svg>
+        </div>
         <!-- Collapse button -->
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -26,13 +126,13 @@
 
       </nav>
 
-      <div class="sub-title" style="top:60vh; position: absolute;">
+      <div class="sub-title">
 
         Innovation distinguishes <br>between a leader and a follower.
 
       </div>
 
-      <table class="footer-landing" style="top:80vh; position: absolute;">
+      <table class="footer-landing">
         <tr>
           <td>
             <img class="play-image" src="assets/play.svg">
@@ -105,18 +205,52 @@
 </div>
 
 <div *ngIf="nav.contact" #contact>
-  <div class="backdrop-1"></div>
-  <div class="backdrop-1-1"></div>
   <div class="front-layer-1">
     <nav class="navbar navbar-expand-lg navbar-dark primary-color">
       <!-- KKRL Title -->
 
-      <div class="title" style="color: black !important;" href="#">KKRL</div>
+      <div class="title" style="color: black !important;" href="#">
+        <svg style="height: 11vh; max-width:20vw;" xmlns="http://www.w3.org/2000/svg" width="268" height="82.458"
+          viewBox="0 0 268 82.458">
+          <defs>
+            <style>
+              .a {
+                fill: #df1f00;
+              }
+
+              .b {
+                fill: #e9544c;
+              }
+
+              .c {
+                font-size: 4.16vw;
+                font-family: Montserrat-Light, Montserrat;
+                font-weight: 300;
+              }
+            </style>
+          </defs>
+          <g transform="translate(-117 -34.157)">
+            <g transform="translate(17 11)">
+              <path class="a"
+                d="M35.163,82.458h0A41.628,41.628,0,0,1,12.769,71.279q6.407-6.816,12.817-13.629l.014-.015,9.044-9.616a2.718,2.718,0,0,0,.249-.325c.036-.051.071-.1.107-.152l.08.058.083.059v34.8Zm13.32-.024h0v-35.3l.307.326.01.011.372.4,3.638,3.867C58.762,58.055,64.916,64.6,70.971,71.039A41.637,41.637,0,0,1,48.484,82.434ZM5.307,61.612h0a41.732,41.732,0,0,1-.334-40.16l.243.263.243.263L17.045,34.518l.155.167,6.214,6.725c.114.124.227.249.346.38l.167.184c-.032.039-.062.077-.092.114-.059.075-.115.146-.177.211L5.308,61.611ZM78.361,61.3h0q-6.1-6.414-12.19-12.83l-.1-.106-3.075-3.236q-1.012-1.065-2.023-2.133l-.011-.011L60.026,42l.073-.087c.047-.056.083-.1.123-.142L70.363,30.793l8.331-9.017A41.732,41.732,0,0,1,78.361,61.3ZM48.482,37.567V.021a41.643,41.643,0,0,1,22.986,11.89C65.007,19.155,58.437,26.5,52.083,33.6l-3.262,3.647a2.457,2.457,0,0,1-.192.184c-.043.039-.091.082-.146.133Zm-13.341-.333,0,0-.458-.5-.011-.012c-.3-.331-.585-.643-.862-.954l-2.984-3.336-.018-.02c-6.078-6.8-12.362-13.822-18.548-20.727A41.634,41.634,0,0,1,35.141,0V37.234Z"
+                transform="translate(100 23.157)" />
+              <path class="b"
+                d="M20.35,52.241h0A26.919,26.919,0,0,1,8.1,45.376L12.691,40.5l.161-.171,6.979-7.42a2.76,2.76,0,0,0,.247-.322c.036-.052.072-.1.11-.155l.163.116V52.24ZM33.67,52.2h0V32.019l.614.652.008.009.067.072,3.084,3.279.2.209,8.366,8.894A26.916,26.916,0,0,1,33.671,52.2ZM1.479,34.942v0a27.081,27.081,0,0,1-.312-16.685l6.858,7.422L8.6,26.3c.109.118.216.236.329.361l.184.2c-.031.038-.061.075-.09.112-.06.076-.116.148-.179.214L1.48,34.94Zm51.033-.366h0l-.678-.714-3.652-3.844-1.872-1.974-.005-.005-.019-.02-1.071-1.13.084-.1c.041-.048.076-.09.112-.129l7.406-8.017a27.094,27.094,0,0,1-.3,15.932ZM33.669,22.458V.034A26.859,26.859,0,0,1,46.756,7.884Q42.23,12.947,37.7,18.008l-3.695,4.13a2.623,2.623,0,0,1-.2.19c-.042.038-.087.079-.139.127Zm-13.341-.333,0,0-.456-.5c-.307-.338-.595-.654-.876-.969l-3.413-3.816L7.347,7.63A26.863,26.863,0,0,1,20.328,0V22.125Z"
+                transform="translate(114.814 38.267)" />
+            </g>
+            <text class="c" transform="translate(222 97)">
+              <tspan x="0" y="0">
+                KKRL
+              </tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
       <!-- Collapse button -->
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
         aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon navbar-dark"></span>
       </button>
 
       <!-- Collapsible content -->
@@ -127,42 +261,90 @@
           <li class="nav-item"><a class="nav-link black-link" href="#ourProcesses" (click)="change(2)">Our Process</a>
           </li>
           <li class="nav-item"><a class="nav-link black-link" href="#bestFit" (click)="change(3)">Best Fit</a></li>
-          <li class="nav-item"><a class="nav-link black-link bold-nav" href="#contact" (click)="change(4)">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link black-link bold-nav" href="#contact" (click)="change(4)">Contact
+              Us</a></li>
         </ul>
       </div>
 
     </nav>
-    <table style="width: 100%;">
-      <tr>
-        <td style="width: 50%;">
-          <div class="thanks">
-            Thank you<br> for the<br> opportunity<br> to serve you
-          </div>
-        </td>
-        <td>
-          <div class="row justify-content-center" style="margin-top: 3rem;">
-            <input class="inputs" type="text" placeholder="Your Full Name" required><br>
-            <input class="inputs" type="tel" placeholder="Mobile Number (optional)"><br>
-            <input class="inputs" type="email" placeholder="Your Email Address" required><br>
-            <input class="inputs" type="datetime" placeholder="Date & Time to connect" required><br>
-            <div style="width: 75%;" class="cb">
-              <input type="checkbox" id="quote" name="quote"><label class="cb-label" for="quote">Request for
-                Quote</label><br>
-            </div>
-            <div (click)="submit()" class="submit">SUBMIT</div>
-          </div>
-        </td>
-      </tr>
-    </table>
+    <div class="row" style="padding: 0 2%;margin-top: 4vh;">
+      <div class="col-md-6 thanks-bg">
+        <div class="thanks">
+          Thank you<br> for the<br> opportunity<br> to serve you
+        </div>
+      </div>
+      <div class="col-md-6" style="background-color: black; padding: 0 4vw;">
+        <form style="padding-top: 8vh;">
+          <mat-form-field class="inputs">
+            <mat-label>Your Full Name</mat-label>
+            <input matInput required placeholder="Enter Your Full Name">
+          </mat-form-field>
+
+          <mat-form-field class="inputs">
+            <mat-label>Mobile Number (optional)</mat-label>
+            <input type="tel" matInput placeholder="Mobile Number">
+          </mat-form-field>
+
+          <mat-form-field class="inputs">
+            <mat-label>Your Email Address</mat-label>
+            <input type="email" matInput required [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+              placeholder="Ex. krishna@kkrl.com">
+          </mat-form-field>
+
+          <mat-form-field class="inputs">
+            <mat-label>Date & Time to connect</mat-label>
+            <input type="datetime-local" required matInput [formControl]="emailFormControl"
+              [errorStateMatcher]="matcher" placeholder="Choose your time">
+          </mat-form-field>
+        </form>
+        <div (click)="submit()" class="submit">SUBMIT</div>
+      </div>
+    </div>
   </div>
 </div>
 
 <div *ngIf="nav.ourProcesses" #ourProcesses>
-  <div class="blue-backdrop">
+  <div id="navbar-top" class="navbar-top">
     <nav class="navbar navbar-expand-lg navbar-dark primary-color">
       <!-- KKRL Title -->
+      <div class="title" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="268" height="82.458"
+          viewBox="0 0 268 82.458">
+          <defs>
+            <style>
+              .a1,
+              .c1 {
+                fill: #fff;
+              }
 
-      <div class="title" href="#">KKRL</div>
+              .b1 {
+                fill: #fa9999;
+              }
+
+              .c1 {
+                font-size: 4.16vw;
+                font-family: Monteserrat-Light, Montserrat;
+                font-weight: 300;
+              }
+            </style>
+          </defs>
+          <g transform="translate(-117 -34.157)">
+            <g transform="translate(17 11)">
+              <path class="a1"
+                d="M35.163,82.458h0A41.628,41.628,0,0,1,12.769,71.279q6.407-6.816,12.817-13.629l.014-.015,9.044-9.616a2.718,2.718,0,0,0,.249-.325c.036-.051.071-.1.107-.152l.08.058.083.059v34.8Zm13.32-.024h0v-35.3l.307.326.01.011.372.4,3.638,3.867C58.762,58.055,64.916,64.6,70.971,71.039A41.637,41.637,0,0,1,48.484,82.434ZM5.307,61.612h0a41.732,41.732,0,0,1-.334-40.16l.243.263.243.263L17.045,34.518l.155.167,6.214,6.725c.114.124.227.249.346.38l.167.184c-.032.039-.062.077-.092.114-.059.075-.115.146-.177.211L5.308,61.611ZM78.361,61.3h0q-6.1-6.414-12.19-12.83l-.1-.106-3.075-3.236q-1.012-1.065-2.023-2.133l-.011-.011L60.026,42l.073-.087c.047-.056.083-.1.123-.142L70.363,30.793l8.331-9.017A41.732,41.732,0,0,1,78.361,61.3ZM48.482,37.567V.021a41.643,41.643,0,0,1,22.986,11.89C65.007,19.155,58.437,26.5,52.083,33.6l-3.262,3.647a2.457,2.457,0,0,1-.192.184c-.043.039-.091.082-.146.133Zm-13.341-.333,0,0-.458-.5-.011-.012c-.3-.331-.585-.643-.862-.954l-2.984-3.336-.018-.02c-6.078-6.8-12.362-13.822-18.548-20.727A41.634,41.634,0,0,1,35.141,0V37.234Z"
+                transform="translate(100 23.157)" />
+              <path class="b1"
+                d="M20.35,52.241h0A26.919,26.919,0,0,1,8.1,45.376L12.691,40.5l.161-.171,6.979-7.42a2.76,2.76,0,0,0,.247-.322c.036-.052.072-.1.11-.155l.163.116V52.24ZM33.67,52.2h0V32.019l.614.652.008.009.067.072,3.084,3.279.2.209,8.366,8.894A26.916,26.916,0,0,1,33.671,52.2ZM1.479,34.942v0a27.081,27.081,0,0,1-.312-16.685l6.858,7.422L8.6,26.3c.109.118.216.236.329.361l.184.2c-.031.038-.061.075-.09.112-.06.076-.116.148-.179.214L1.48,34.94Zm51.033-.366h0l-.678-.714-3.652-3.844-1.872-1.974-.005-.005-.019-.02-1.071-1.13.084-.1c.041-.048.076-.09.112-.129l7.406-8.017a27.094,27.094,0,0,1-.3,15.932ZM33.669,22.458V.034A26.859,26.859,0,0,1,46.756,7.884Q42.23,12.947,37.7,18.008l-3.695,4.13a2.623,2.623,0,0,1-.2.19c-.042.038-.087.079-.139.127Zm-13.341-.333,0,0-.456-.5c-.307-.338-.595-.654-.876-.969l-3.413-3.816L7.347,7.63A26.863,26.863,0,0,1,20.328,0V22.125Z"
+                transform="translate(114.814 38.267)" />
+            </g>
+            <text class="c1" transform="translate(222 97)">
+              <tspan x="0" y="0">
+                KKRL
+              </tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
       <!-- Collapse button -->
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -182,11 +364,195 @@
       </div>
 
     </nav>
+    <div class="back-to-top" (click)="backToTop()">
+      Back To Top ↑
+    </div>
+  </div>
+  <div class="blue-backdrop">
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+      <!-- KKRL Title -->
+
+      <div class="title" href="#">
+        <svg style="height: 11vh; max-width:20vw; " xmlns="http://www.w3.org/2000/svg" width="268" height="82.458"
+          viewBox="0 0 268 82.458">
+          <defs>
+            <style>
+              .a1,
+              .c1 {
+                fill: #fff;
+              }
+
+              .b1 {
+                fill: #fa9999;
+              }
+
+              .c1 {
+                font-size: 4.16vw;
+                font-family: Monteserrat-Light, Montserrat;
+                font-weight: 300;
+              }
+            </style>
+          </defs>
+          <g transform="translate(-117 -34.157)">
+            <g transform="translate(17 11)">
+              <path class="a1"
+                d="M35.163,82.458h0A41.628,41.628,0,0,1,12.769,71.279q6.407-6.816,12.817-13.629l.014-.015,9.044-9.616a2.718,2.718,0,0,0,.249-.325c.036-.051.071-.1.107-.152l.08.058.083.059v34.8Zm13.32-.024h0v-35.3l.307.326.01.011.372.4,3.638,3.867C58.762,58.055,64.916,64.6,70.971,71.039A41.637,41.637,0,0,1,48.484,82.434ZM5.307,61.612h0a41.732,41.732,0,0,1-.334-40.16l.243.263.243.263L17.045,34.518l.155.167,6.214,6.725c.114.124.227.249.346.38l.167.184c-.032.039-.062.077-.092.114-.059.075-.115.146-.177.211L5.308,61.611ZM78.361,61.3h0q-6.1-6.414-12.19-12.83l-.1-.106-3.075-3.236q-1.012-1.065-2.023-2.133l-.011-.011L60.026,42l.073-.087c.047-.056.083-.1.123-.142L70.363,30.793l8.331-9.017A41.732,41.732,0,0,1,78.361,61.3ZM48.482,37.567V.021a41.643,41.643,0,0,1,22.986,11.89C65.007,19.155,58.437,26.5,52.083,33.6l-3.262,3.647a2.457,2.457,0,0,1-.192.184c-.043.039-.091.082-.146.133Zm-13.341-.333,0,0-.458-.5-.011-.012c-.3-.331-.585-.643-.862-.954l-2.984-3.336-.018-.02c-6.078-6.8-12.362-13.822-18.548-20.727A41.634,41.634,0,0,1,35.141,0V37.234Z"
+                transform="translate(100 23.157)" />
+              <path class="b1"
+                d="M20.35,52.241h0A26.919,26.919,0,0,1,8.1,45.376L12.691,40.5l.161-.171,6.979-7.42a2.76,2.76,0,0,0,.247-.322c.036-.052.072-.1.11-.155l.163.116V52.24ZM33.67,52.2h0V32.019l.614.652.008.009.067.072,3.084,3.279.2.209,8.366,8.894A26.916,26.916,0,0,1,33.671,52.2ZM1.479,34.942v0a27.081,27.081,0,0,1-.312-16.685l6.858,7.422L8.6,26.3c.109.118.216.236.329.361l.184.2c-.031.038-.061.075-.09.112-.06.076-.116.148-.179.214L1.48,34.94Zm51.033-.366h0l-.678-.714-3.652-3.844-1.872-1.974-.005-.005-.019-.02-1.071-1.13.084-.1c.041-.048.076-.09.112-.129l7.406-8.017a27.094,27.094,0,0,1-.3,15.932ZM33.669,22.458V.034A26.859,26.859,0,0,1,46.756,7.884Q42.23,12.947,37.7,18.008l-3.695,4.13a2.623,2.623,0,0,1-.2.19c-.042.038-.087.079-.139.127Zm-13.341-.333,0,0-.456-.5c-.307-.338-.595-.654-.876-.969l-3.413-3.816L7.347,7.63A26.863,26.863,0,0,1,20.328,0V22.125Z"
+                transform="translate(114.814 38.267)" />
+            </g>
+            <text class="c1" transform="translate(222 97)">
+              <tspan x="0" y="0">
+                KKRL
+              </tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
+      <!-- Collapse button -->
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about" (click)="change(1)">About</a></li>
+          <li class="nav-item"><a class="nav-link bold-nav" href="#ourProcesses" (click)="change(2)">Our Process</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#bestFit" (click)="change(3)">Best Fit</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" (click)="change(4)">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </nav>
     <div class="titleXL-white">
       <span>Our Process</span>
     </div>
     <div style="text-align: center; margin-top: 4vh;">
-      <img width="40%" src="assets/our_process.svg">
+      <svg style="height: 35vh;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="804.136" height="411.338" viewBox="0 0 804.136 411.338">
+        <defs>
+          <style>
+            .a,
+            .b,
+            .e {
+              fill: #fff;
+            }
+
+            .a {
+              font-size: 17px;
+            }
+
+            .a,
+            .b {
+              font-family: OpenSans-Bold, Open Sans;
+              font-weight: 700;
+            }
+
+            .b {
+              font-size: 18px;
+            }
+
+            .c,
+            .d,
+            .g {
+              fill: none;
+            }
+
+            .c {
+              stroke: #e4f1fe;
+            }
+
+            .c,
+            .d {
+              stroke-width: 10px;
+            }
+
+            .d {
+              stroke: #fff;
+            }
+
+            .f {
+              stroke: none;
+            }
+
+            .h {
+              filter: url(#c);
+            }
+
+            .i {
+              filter: url(#a);
+            }
+          </style>
+          <filter id="a" x="0" y="0" width="411.338" height="411.338" filterUnits="userSpaceOnUse">
+            <feOffset dy="3" input="SourceAlpha" />
+            <feGaussianBlur stdDeviation="3" result="b" />
+            <feFlood flood-opacity="0.161" />
+            <feComposite operator="in" in2="b" />
+            <feComposite in="SourceGraphic" />
+          </filter>
+          <filter id="c" x="392.798" y="0" width="411.338" height="411.338" filterUnits="userSpaceOnUse">
+            <feOffset dy="3" input="SourceAlpha" />
+            <feGaussianBlur stdDeviation="3" result="d" />
+            <feFlood flood-opacity="0.161" />
+            <feComposite operator="in" in2="d" />
+            <feComposite in="SourceGraphic" />
+          </filter>
+        </defs>
+        <g transform="translate(-558 -350.987)">
+          <text class="a" transform="translate(634 542)">
+            <tspan x="0" y="0">
+              Understand
+            </tspan>
+            <tspan x="0" y="33">
+              the Problem
+            </tspan>
+          </text>
+          <text class="b" transform="translate(1048 541)">
+            <tspan x="0" y="0">
+              Create
+            </tspan>
+            <tspan x="0" y="35">
+              Solution
+            </tspan>
+          </text>
+          <text class="a" transform="translate(788 542)">
+            <tspan x="0" y="0">
+              Describe
+            </tspan>
+            <tspan x="0" y="33">
+              the Problem
+            </tspan>
+          </text>
+          <text class="b" transform="translate(1190 539)">
+            <tspan x="0" y="0">
+              Test
+            </tspan>
+            <tspan x="0" y="35">
+              Solution
+            </tspan>
+          </text>
+          <g class="i" transform="matrix(1, 0, 0, 1, 558, 350.99)">
+            <g class="c" transform="translate(9 202.67) rotate(-45)">
+              <rect class="f" width="278.132" height="278.132" />
+              <rect class="g" x="5" y="5" width="268.132" height="268.132" />
+            </g>
+          </g>
+          <g class="h" transform="matrix(1, 0, 0, 1, 558, 350.99)">
+            <g class="d" transform="translate(401.8 202.67) rotate(-45)">
+              <rect class="f" width="278.132" height="278.132" />
+              <rect class="g" x="5" y="5" width="268.132" height="268.132" />
+            </g>
+          </g>
+          <rect class="e" width="9" height="376" transform="translate(759 368)" />
+          <rect class="e" width="9" height="376" transform="translate(1152 368)" />
+        </g>
+      </svg>
     </div>
 
     <div class="row">
@@ -465,12 +831,113 @@
 </div>
 
 <div *ngIf="nav.bestFit" #bestFit>
+  <div id="navbar-top" class="navbar-top" style="background: #FF5005 !important;">
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+      <!-- KKRL Title -->
+      <div class="title" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="268" height="82.458"
+          viewBox="0 0 268 82.458">
+          <defs>
+            <style>
+              .a1,
+              .c1 {
+                fill: #fff;
+              }
+
+              .b1 {
+                fill: #fa9999;
+              }
+
+              .c1 {
+                font-size: 4.16vw;
+                font-family: Monteserrat-Light, Montserrat;
+                font-weight: 300;
+              }
+            </style>
+          </defs>
+          <g transform="translate(-117 -34.157)">
+            <g transform="translate(17 11)">
+              <path class="a1"
+                d="M35.163,82.458h0A41.628,41.628,0,0,1,12.769,71.279q6.407-6.816,12.817-13.629l.014-.015,9.044-9.616a2.718,2.718,0,0,0,.249-.325c.036-.051.071-.1.107-.152l.08.058.083.059v34.8Zm13.32-.024h0v-35.3l.307.326.01.011.372.4,3.638,3.867C58.762,58.055,64.916,64.6,70.971,71.039A41.637,41.637,0,0,1,48.484,82.434ZM5.307,61.612h0a41.732,41.732,0,0,1-.334-40.16l.243.263.243.263L17.045,34.518l.155.167,6.214,6.725c.114.124.227.249.346.38l.167.184c-.032.039-.062.077-.092.114-.059.075-.115.146-.177.211L5.308,61.611ZM78.361,61.3h0q-6.1-6.414-12.19-12.83l-.1-.106-3.075-3.236q-1.012-1.065-2.023-2.133l-.011-.011L60.026,42l.073-.087c.047-.056.083-.1.123-.142L70.363,30.793l8.331-9.017A41.732,41.732,0,0,1,78.361,61.3ZM48.482,37.567V.021a41.643,41.643,0,0,1,22.986,11.89C65.007,19.155,58.437,26.5,52.083,33.6l-3.262,3.647a2.457,2.457,0,0,1-.192.184c-.043.039-.091.082-.146.133Zm-13.341-.333,0,0-.458-.5-.011-.012c-.3-.331-.585-.643-.862-.954l-2.984-3.336-.018-.02c-6.078-6.8-12.362-13.822-18.548-20.727A41.634,41.634,0,0,1,35.141,0V37.234Z"
+                transform="translate(100 23.157)" />
+              <path class="b1"
+                d="M20.35,52.241h0A26.919,26.919,0,0,1,8.1,45.376L12.691,40.5l.161-.171,6.979-7.42a2.76,2.76,0,0,0,.247-.322c.036-.052.072-.1.11-.155l.163.116V52.24ZM33.67,52.2h0V32.019l.614.652.008.009.067.072,3.084,3.279.2.209,8.366,8.894A26.916,26.916,0,0,1,33.671,52.2ZM1.479,34.942v0a27.081,27.081,0,0,1-.312-16.685l6.858,7.422L8.6,26.3c.109.118.216.236.329.361l.184.2c-.031.038-.061.075-.09.112-.06.076-.116.148-.179.214L1.48,34.94Zm51.033-.366h0l-.678-.714-3.652-3.844-1.872-1.974-.005-.005-.019-.02-1.071-1.13.084-.1c.041-.048.076-.09.112-.129l7.406-8.017a27.094,27.094,0,0,1-.3,15.932ZM33.669,22.458V.034A26.859,26.859,0,0,1,46.756,7.884Q42.23,12.947,37.7,18.008l-3.695,4.13a2.623,2.623,0,0,1-.2.19c-.042.038-.087.079-.139.127Zm-13.341-.333,0,0-.456-.5c-.307-.338-.595-.654-.876-.969l-3.413-3.816L7.347,7.63A26.863,26.863,0,0,1,20.328,0V22.125Z"
+                transform="translate(114.814 38.267)" />
+            </g>
+            <text class="c1" transform="translate(222 97)">
+              <tspan x="0" y="0">
+                KKRL
+              </tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
+      <!-- Collapse button -->
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about" (click)="change(1)">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ourProcesses" (click)="change(2)">Our Process</a></li>
+          <li class="nav-item"><a class="nav-link bold-nav" href="#bestFit" (click)="change(3)">Best Fit</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" (click)="change(4)">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </nav>
+    <div class="back-to-top" (click)="backToTop()">
+      Back To Top ↑
+    </div>
+  </div>
   <div class="bestfit-backdrop"></div>
   <div class="front-layer">
     <nav class="navbar navbar-expand-lg navbar-dark primary-color">
       <!-- KKRL Title -->
 
-      <div class="title" href="#">KKRL</div>
+      <div class="title" href="#">
+        <svg style="height: 11vh; max-width:20vw;" xmlns="http://www.w3.org/2000/svg" width="268" height="82.458"
+          viewBox="0 0 268 82.458">
+          <defs>
+            <style>
+              .a {
+                fill: #df1f00;
+              }
+
+              .b {
+                fill: #e9544c;
+              }
+
+              .c {
+                fill: #fff;
+                font-size: 4.16vw;
+                font-family: Montserrat-Light, Montserrat;
+                font-weight: 300;
+              }
+            </style>
+          </defs>
+          <g transform="translate(-117 -34.157)">
+            <g transform="translate(17 11)">
+              <path class="a"
+                d="M35.163,82.458h0A41.628,41.628,0,0,1,12.769,71.279q6.407-6.816,12.817-13.629l.014-.015,9.044-9.616a2.718,2.718,0,0,0,.249-.325c.036-.051.071-.1.107-.152l.08.058.083.059v34.8Zm13.32-.024h0v-35.3l.307.326.01.011.372.4,3.638,3.867C58.762,58.055,64.916,64.6,70.971,71.039A41.637,41.637,0,0,1,48.484,82.434ZM5.307,61.612h0a41.732,41.732,0,0,1-.334-40.16l.243.263.243.263L17.045,34.518l.155.167,6.214,6.725c.114.124.227.249.346.38l.167.184c-.032.039-.062.077-.092.114-.059.075-.115.146-.177.211L5.308,61.611ZM78.361,61.3h0q-6.1-6.414-12.19-12.83l-.1-.106-3.075-3.236q-1.012-1.065-2.023-2.133l-.011-.011L60.026,42l.073-.087c.047-.056.083-.1.123-.142L70.363,30.793l8.331-9.017A41.732,41.732,0,0,1,78.361,61.3ZM48.482,37.567V.021a41.643,41.643,0,0,1,22.986,11.89C65.007,19.155,58.437,26.5,52.083,33.6l-3.262,3.647a2.457,2.457,0,0,1-.192.184c-.043.039-.091.082-.146.133Zm-13.341-.333,0,0-.458-.5-.011-.012c-.3-.331-.585-.643-.862-.954l-2.984-3.336-.018-.02c-6.078-6.8-12.362-13.822-18.548-20.727A41.634,41.634,0,0,1,35.141,0V37.234Z"
+                transform="translate(100 23.157)" />
+              <path class="b"
+                d="M20.35,52.241h0A26.919,26.919,0,0,1,8.1,45.376L12.691,40.5l.161-.171,6.979-7.42a2.76,2.76,0,0,0,.247-.322c.036-.052.072-.1.11-.155l.163.116V52.24ZM33.67,52.2h0V32.019l.614.652.008.009.067.072,3.084,3.279.2.209,8.366,8.894A26.916,26.916,0,0,1,33.671,52.2ZM1.479,34.942v0a27.081,27.081,0,0,1-.312-16.685l6.858,7.422L8.6,26.3c.109.118.216.236.329.361l.184.2c-.031.038-.061.075-.09.112-.06.076-.116.148-.179.214L1.48,34.94Zm51.033-.366h0l-.678-.714-3.652-3.844-1.872-1.974-.005-.005-.019-.02-1.071-1.13.084-.1c.041-.048.076-.09.112-.129l7.406-8.017a27.094,27.094,0,0,1-.3,15.932ZM33.669,22.458V.034A26.859,26.859,0,0,1,46.756,7.884Q42.23,12.947,37.7,18.008l-3.695,4.13a2.623,2.623,0,0,1-.2.19c-.042.038-.087.079-.139.127Zm-13.341-.333,0,0-.456-.5c-.307-.338-.595-.654-.876-.969l-3.413-3.816L7.347,7.63A26.863,26.863,0,0,1,20.328,0V22.125Z"
+                transform="translate(114.814 38.267)" />
+            </g>
+            <text class="c" transform="translate(222 97)">
+              <tspan x="0" y="0" style="font-family:Montserrat;font-weight:300;">
+                KKRL
+              </tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
       <!-- Collapse button -->
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -490,13 +957,13 @@
       </div>
 
     </nav>
-    <img width="20%" style="top: 200px; left: 10vw; position: absolute;" src="assets/cognitron-white.svg">
-    <div style="position: absolute;font: normal normal bold 1.3vw/2vw Montserrat;letter-spacing: 0px;color: #FFFFFF;top: 350px;
+    <img width="20%" style="top: 30vh; left: 10vw; position: absolute;" src="assets/cognitron-white.svg">
+    <div style="position: absolute;font: normal normal bold 1.3vw/2vw Montserrat;letter-spacing: 0px;color: #FFFFFF;top: 50vh;
     left: 10vw;">
-      About Congnitron
+      About Cognitron
     </div>
     <div
-      style="position: absolute;top: 400px; left: 10vw;font: normal normal 200 1.2vw/2.5vw Montserrat;letter-spacing: 0px;color: #FFFFFF;opacity: 0.91;">
+      style="position: absolute;top: 57vh; left: 10vw;font: normal normal 200 1.2vw/2.5vw Montserrat;letter-spacing: 0px;color: #FFFFFF;opacity: 0.91;">
       Based out of India, Cognitron Technologies is a Software Product Company which aims at making life simple by
       automating<br>
       mundane daily routines using Artificial Intelligence and Machine Learning.<br><br>
@@ -567,7 +1034,7 @@
     </div>
   </div>
   <div style="position: absolute; top:205vh; width: 100%;z-index: 0;" class="clients">
-    <div style=" background: #F5F5F5; z-index: 0; padding: 10vh 0 4vh 0;">
+    <div style=" background: #F5F5F5; z-index: 0; padding: 10vh 0 4vh 0; overflow: hidden;">
       <div class="titleXL-mini">
         <span>Clients</span>
       </div>
