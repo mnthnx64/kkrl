@@ -3,12 +3,13 @@
     top: -170px;
     z-index: 5;
     width: 100%;
-    background: black;
+    background: #01010180;
+    backdrop-filter: blur(4px);
     transition: top 0.3s;
     nav {  
         padding-left: 2vw;
         box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        height: 8vh;
+        height: 6vh;
     }
     svg {
         height: 4vh; 
@@ -21,12 +22,12 @@
     position: absolute;
     background: black;
     color: white;
-    padding: 2vh 2vw;
-    border-radius: 60px;
+    padding: 15px 15px;
+    border-radius: 80px;
     cursor: pointer;
     margin-top: 2vh;
-    left: 43%;
-    font: normal normal 300 1vw/1vw Montserrat;
+    right: 2vw;
+    font: normal normal 300 2vw/1vw Montserrat;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -126,7 +127,6 @@
     padding-bottom: 2vh;
 }
 
-/* Backdrop */
 .backdrop {
     background: #000000;
     background-image: url("../assets/background-2__01.png");
@@ -158,22 +158,6 @@
     height: 100%;
 }
 
-.header-row {
-    width: 93.75%;
-    display: flex;
-}
-
-/* Landing div style  */
-.landing-div {
-    background-image: url("../assets/background-2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 89vh;
-    margin: 3.125%;
-    filter: brightness(100%);
-    filter: blur(100%);
-}
-
 .title {
     text-align: left;
     font: normal normal 900 4vw/6vw Montserrat;
@@ -195,14 +179,6 @@
     margin-right: 16.8vw;
 }
 
-.header-div {
-    display: flex;
-}
-
-.navbar-nav li {
-    margin-right: 3.05vw;
-}
-
 .navbar-nav a {
     font: normal normal 500 1vw/1.71vw Montserrat;
     letter-spacing: 0px;
@@ -222,6 +198,7 @@
     text-align: center;
 }
 .navbar-nav li {
+    margin-right: 3.05vw;
     display: table-cell;
     position: relative;
 }
@@ -288,12 +265,6 @@
     margin-left: 2.5vw;
 }
 
-.landing-footer {
-    margin-left: 3vw;
-    margin-top: 0.97442143727162vh;
-    display: flex;
-}
-
 .footer-text {
     text-align: left;
     font: normal normal 300 1.5vw/0.4vw Montserrat;
@@ -345,10 +316,6 @@
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
-}
-
-.query {
-    padding: auto;
 }
 
 .blue-backdrop {
@@ -483,29 +450,6 @@
 }
 
 ::placeholder {
-    color: white !important;
-    opacity: 0.24 !important;
-}
-
-.cb {
-    margin: 20px 1%;
-    background: transparent;
-    border: 0px;
-    padding: 1vw 0;
-    text-align: left;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 0.91;
-    outline: none;
-}
-
-.cb-label {
-    margin-left: 1vw;
-    font: normal normal 300 1.4vw/1.71vw Montserrat;
-    opacity: 0.91;
-}
-
-::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #ffffff;
     opacity: 0.91;
@@ -528,66 +472,332 @@
     cursor: pointer;
 }
 
+.questions {
+    margin-top: 2vh; 
+    font: normal normal 300 1vw/2vw Montserrat;
+}
+
+.output {
+    font: normal normal bold 1.4vw/2.5vw Montserrat;
+}
+
+.output-desc {
+    font: normal normal 300 1vw/2vw Montserrat;
+}
+
+.element-title-container{
+    padding-bottom: 4vh;
+    border-bottom: 2px solid #E1E1E166;
+}
+
+.cognitron-img{
+    top: 30vh; 
+    left: 10vw; 
+    position: absolute; 
+    width: 20vw
+}
+
+.about-ct{
+    position: absolute;
+    font: normal normal bold 1.3vw/2vw Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    top: 50vh;
+    left: 10vw;
+}
+
+.about-ct-desc {
+    position: absolute;
+    top: 57vh; 
+    left: 10vw;
+    font: normal normal 200 1.2vw/2.5vw Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 0.91;
+}
+
+.name {
+    font: normal normal bold 1vw/1.5vw Montserrat;
+    letter-spacing: 0px;
+}
+
+.designation {
+    font: normal normal 600 0.9vw/2vw Montserrat;
+    letter-spacing: 0px;
+}
+
+.desc-sum {
+    font: normal normal 300 0.8vw/1.6vw Montserrat;
+    letter-spacing: 0px;
+}
+
+.desc-anish{
+    font: normal normal 300 0.8vw/1.4vw Montserrat;
+    letter-spacing: 0px;
+}
+
+.power-men {
+    background: #F5F5F5; 
+    width: 70%; 
+    padding:2vh 0 0 2vw;
+}
+
+.power-men-ani {
+    background: #F5F5F5; 
+    width: 70%; 
+    padding:2vh 0 0 2vw;
+}
+
+.hiring-policy {
+    padding: 6vh 0 0 0; 
+    font: normal normal normal 1.1vw/2.2vw Montserrat;
+    letter-spacing: 0px;
+}
+
+.clients {
+    position: absolute; 
+    top:205vh; 
+    width: 100%;
+    z-index: 0;
+}
+
+.clients-content {
+    margin: 10vh 0;
+}
+
+.clients-container {
+    background: #F5F5F5;
+    z-index: 0; 
+    padding: 10vh 0 4vh 0; 
+    overflow: hidden;
+}
+
+.team-container {
+    z-index: 0; 
+    padding: 10vh 0 4vh 0; 
+    overflow: hidden;
+}
+
+.contact-container{
+    padding: 0 2%;
+    margin-top: 4vh;
+}
+
+.form-container {
+    padding-top: 8vh;
+}
+
 /** For Mobile screen**/
-@media screen and (max-width: 768) {
-    .front-layer,
-    .first-page,
-    .backdrop {
-        background-size: cover;
-        height: 40%;
+@media screen and (max-device-width: 768px) {
+    .backdrop{
+        background-position-x: 30%;
     }
-    .landing-div {
-        background-size: contain;
-        margin: 3.125%;
-        filter: brightness(100%);
-        filter: blur(100%);
-        min-height: 89vh;
+    .sub-title {  
+        font: normal normal 200 6.5vw/9vw Montserrat;
     }
 
-    .title {
-        text-align: left;
-        font: normal normal 900 5.7vw/7.01vw Montserrat;
-        letter-spacing: 0px;
-        color: #ffffff;
-        opacity: 1;
-        filter: brightness(100%);
-        margin-left: 5.5%;
+    .footer-detail {
+        font: normal normal 300 2vw/2vw Montserrat;
+        width: 25vw;
     }
 
-    .navbar-nav a {
-        font: normal normal 1.4vw/1.71vw Montserrat;
-        letter-spacing: 0px;
-        color: #ffffff;
-        text-transform: capitalize;
-        opacity: 1;
-    }
-
-    .sub-title {
-        margin-top: 13vh;
-        margin-left: 3vw;
-        text-align: left;
-        font: normal normal 300 3.31vw/4.4vw Montserrat;
-        letter-spacing: 0px;
-        color: #ffffff;
-        opacity: 1;
+    .footer-text {
+        font: normal normal 300 4.5vw/0.4vw Montserrat;
     }
 
     .play-image {
-        width: 5vw;
+        width: 5.5vw;
     }
-    .footer-text {
-        text-align: left;
-        font: normal normal normal 1.5vw/2vw Montserrat;
-        letter-spacing: 0px;
-        color: #ffffff;
-        opacity: 1;
-        margin-left: 1vw;
-        margin-top: 1.2vh;
+
+    .titleXL {
+        padding: 0 6vw;
+        font: normal normal 300 3.6vw/5vw Montserrat;
+        br {
+            display: none;
+        }
     }
-    .landing-footer {
-        margin-left: 3vw;
-        margin-top: -0.7vh;
-        display: flex;
+
+    .titleXL::after {
+        margin-top: 1.65vh;
+    }
+
+    .desc {
+        font: normal normal normal 2.3vw/3.8vw Montserrat;
+        padding: 3.125vh 12vw;
+    }
+
+    .detail-tab{
+        min-height: 0;
+        margin-top:  4vh;
+        table {
+            width: 100%;
+        }
+    }
+
+    .detail-img{
+        width: 10vw;
+    }
+
+    .detail-heading {
+        font: normal normal 400 3.1vw/3.1vw Montserrat;
+    }
+
+    .detail-desc {
+        margin-top: 0;
+        font: normal normal normal 2.1vw/4vw Montserrat;
+    }
+
+    .blue-backdrop svg{
+        width: 90vw !important;
+    }
+
+    .steps {
+        padding: 0.5vw 4vw;
+    }
+
+    .image-element {
+        padding: 0 0 0 4vw;
+        img{
+            width: 90vw;
+            height: 40vh;
+        }
+        .row{
+            padding-right: 0;
+        }
+    }
+
+    .element-card {
+        padding: 3.5vh 3vw;
+        min-height: auto;
+    }
+
+    .element-title-container {
+        padding-right: 2vw;
+    }
+
+    .element-header {
+        font: normal normal 500 3.31vw/3.31vw Montserrat;
+    }
+
+    .element-sub-header {
+        font: normal normal 300 2vw/4.4vw Montserrat;
+    }
+
+    .element-sub-title {
+        font: normal normal 300 2vw/2.5vw Montserrat;
+        br {
+            display: none;
+        }
+    }
+
+    .questions {
+        font: normal normal 300 2vw/4vw Montserrat;
+    }
+
+    .output {
+        font: normal normal bold 3.4vw/2.5vw Montserrat;
+    }
+
+    .output-desc {
+        font: normal normal 300 2vw/3vw Montserrat;
+    }
+
+    .cognitron-img {
+        width: 63vw;
+    }
+
+    .about-ct {
+        font: normal normal bold 4.3vw/5vw Montserrat;
+    }
+
+    .about-ct-desc {
+        font: normal normal 200 3.2vw/5.5vw Montserrat;
+        padding-right: 7vw;
+        .no-disp {
+            display: none;
+        }
+    }
+
+    .name {
+        font: normal normal bold 3vw/4.5vw Montserrat;
+    }
+
+    .designation {
+        font: normal normal 600 2vw/4vw Montserrat;
+    }
+
+    .desc-sum {
+        font: normal normal 300 1.8vw/3.6vw Montserrat;
+    }
+
+    .desc-anish {
+        font: normal normal 300 1.8vw/3.4vw Montserrat;
+    }
+
+    .power-men {
+        padding:1vh 0 0 2vw;
+    }
+
+    .power-men-ani {
+        padding:0 0 0 2vw;
+    }
+
+    .hiring-policy {
+        padding: 4vh 14vw;
+        font: normal normal normal 2.1vw/4.2vw Montserrat;
+    }
+
+    .clients {
+        top: 229vh;
+    }
+
+    .titleXL-mini {
+        padding: 0 6vw;
+        font: normal normal 300 3.6vw/5vw Montserrat;
+        br {
+            display: none;
+        }
+    }
+
+    .titleXL-mini::after {
+        margin-top: 1vh;
+    }
+
+    .clients-content {
+        margin: 4vh 0;
+    }
+
+    .clients-container, .team-container {
+        padding: 4vh 0;
+    }
+
+    .blue-bullets {
+        padding: 0 15px !important;
+        font: normal normal normal 2.0vw/5vw Montserrat;
+    }
+
+    .thanks-bg {
+        min-height: 40vh;
+    }
+
+    .thanks {
+        font: normal normal 600 7.45vw/10.847222vw Montserrat;
+    }
+
+    .contact-container{
+        margin-top: 0;
+    }
+
+    .inputs {
+        font: normal normal 300 2.4vw/2.71vw Montserrat;
+    }
+
+    .form-container {
+        padding-top: 4vh;
+    }
+
+    .submit {
+        font: normal normal 500 3.2vw/2.8vw Montserrat;
     }
 }
 
@@ -621,60 +831,6 @@
     .element-card {
         min-height: 20vh;
     }
-    // .clients {
-    //     top: 146vh !important;
-    // }
-    // .front-layer,
-    // .first-page,
-    // .backdrop {
-    //     background-size: cover;
-    //     height: 70%;
-    // }
-
-    // .landing-div {
-    //     background-size: contain;
-    //     margin: 3.125%;
-    //     filter: brightness(100%);
-    //     filter: blur(100%);
-    //     min-height: 89vh;
-    // }
-
-    // .title {
-    //     text-align: left;
-    //     font: normal normal 900 5.7vw/7.01vw Montserrat;
-    //     letter-spacing: 0px;
-    //     color: #ffffff;
-    //     opacity: 1;
-    //     filter: brightness(100%);
-    //     margin-left: 2.5vw;
-    // }
-
-    // .navbar-nav a {
-    //     font: normal normal 1.4vw/1.71vw Montserrat;
-    //     letter-spacing: 0px;
-    //     color: #ffffff;
-    //     text-transform: capitalize;
-    //     opacity: 1;
-    // }
-
-    // .sub-title {
-    //     margin-top: 25vh;
-    //     margin-left: 3vw;
-    //     text-align: left;
-    //     font: normal normal 300 3.31vw/4.4vw Montserrat;
-    //     letter-spacing: 0px;
-    //     color: #ffffff;
-    //     opacity: 1;
-    // }
-
-    // .play-image {
-    //     width: 5vw;
-    // }
-    // .landing-footer {
-    //     margin-left: 3vw;
-    //     margin-top: 2vh;
-    //     display: flex;
-    // }
 }
 
 /**tablet landscape mode**/
