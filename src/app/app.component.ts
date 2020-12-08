@@ -33,10 +33,10 @@ export class AppComponent {
     bestFit: boolean,
     contact: boolean
   } = {
-    home: false,
+    home: true,
     ourProcesses: false,
     bestFit: false,
-    contact: true
+    contact: false
   }
 
   emailFormControl = new FormControl('', [
