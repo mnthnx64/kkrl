@@ -1,3 +1,7 @@
+img {
+    align-self: baseline; 
+}
+
 .navbar-top {
     position: fixed;
     top: -170px;
@@ -555,8 +559,7 @@
 }
 
 .clients {
-    position: absolute; 
-    top:205vh; 
+    margin-top: -5rem;
     width: 100%;
     z-index: 0;
 }
@@ -702,6 +705,10 @@
         font: normal normal 300 2vw/3vw Montserrat;
     }
 
+    .bestfit-backdrop {
+        background-position-x: 30%;
+    }
+
     .cognitron-img {
         width: 63vw;
     }
@@ -748,7 +755,7 @@
     }
 
     .clients {
-        top: 229vh;
+        margin-top: 0;
     }
 
     .titleXL-mini {
